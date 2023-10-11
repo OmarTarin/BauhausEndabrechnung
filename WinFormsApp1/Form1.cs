@@ -7,7 +7,7 @@ namespace WinFormsApp1
     {
         private readonly DocReader _reader;
         private CardNameIdentifier _cardNameDic;
-        private DocumentContent _content;
+        private Document _content;
         BindingSource GridViewbindingSource = new BindingSource();
         BindingSource dataGridView1bindingSource = new BindingSource();
 

@@ -39,6 +39,8 @@ namespace WinFormsApp1
             dataGridView1 = new DataGridView();
             button1 = new Button();
             button2 = new Button();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)gridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -106,11 +108,31 @@ namespace WinFormsApp1
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(531, 673);
+            label1.Name = "label1";
+            label1.Size = new Size(48, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Summe";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(1028, 673);
+            label2.Name = "label2";
+            label2.Size = new Size(119, 15);
+            label2.TabIndex = 9;
+            label2.Text = "10 % von der Summe";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1185, 747);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
@@ -136,5 +158,7 @@ namespace WinFormsApp1
         private DataGridView dataGridView1;
         private Button button1;
         private Button button2;
+        private Label label1;
+        private Label label2;
     }
 }

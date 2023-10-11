@@ -37,7 +37,7 @@ namespace WinFormsApp1
             });
         }
 
-        internal DocumentContent ReadDocContent(Document doc)
+        internal Document ReadDocContent(Document doc)
         {
             if (!Directory.Exists(_conf.DocDirectory))
                 throw new Exception($"Document directory does not exists {_conf.DocDirectory}");

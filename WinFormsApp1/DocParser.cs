@@ -5,15 +5,14 @@ using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
 using WinFormsApp1.Models;
 using Document = WinFormsApp1.Models.Document;
-using Org.BouncyCastle.Utilities;
 
 namespace WinFormsApp1
 {
     internal class DocParser
     {
-        public DocumentContent Parse(Document doc)
+        public Document Parse(Document doc)
         {
-            var con = new DocumentContent(doc);
+            var con = new Document(doc);
 
             con.Members = ReadPDF(doc.FullPath)
                 .GroupBy(p => p.CardId)

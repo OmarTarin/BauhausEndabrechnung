@@ -8,7 +8,7 @@ namespace WinFormsApp1
         private readonly string IdentifierFileName = "./CardItentifier";
 
 
-        internal DocumentContent Identify(DocumentContent doc)
+        internal Document Identify(Document doc)
         {
             if (File.Exists(IdentifierFileName))
             {
